@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread("assets/corgi.png")
+img = cv2.imread("assets/mommy.jpg")
 cv2.imshow("Original", img)
 
 # custom transformation matrix

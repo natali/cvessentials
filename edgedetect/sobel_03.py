@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("assets/castello.png", flags=0)
+img = cv2.imread("edgedetect/assets/castello.png", flags=0)
 img = cv2.medianBlur(img, 9)
 img = cv2.GaussianBlur(img, (9, 9), 0)
 

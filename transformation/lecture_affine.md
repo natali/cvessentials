@@ -154,10 +154,13 @@ Take a minute to discuss before moving forward.
 img = cv2.imread("assets/our_image.png")
 cv2.imshow("Original", img)
 
+(h, w) = img.shape[:2]
+
 # custom transformation matrix
 mat = np.float32([[3, 0, 0], [0, 3, 0]])
 print(mat)
-result = cv2.warpAffine(img, M=mat, dsize=(200, 200))
+# result = cv2.warpAffine(img, M=mat, dsize=(200, 200))
+result = cv2.warpAffine(img, M=mat, dsize=(h * 3, w * 3))
 ```
 
 You may have expected the 2x3 matrix `mat` to have a scaling effect on our original image. However, the required argument of `dsize` in our `warpAffine()` call constrained the output to its original dimension, 200x200, thus "cropping out" only the top left corner of the image. 

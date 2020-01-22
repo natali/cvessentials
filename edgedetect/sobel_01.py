@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("assets/sudoku.jpg", 0)
+img = cv2.imread("edgedetect/assets/sudoku.jpg", 0)
 img = cv2.medianBlur(img, 5)
 img = cv2.GaussianBlur(img, (7, 7), 0)
 cv2.imshow("Image", img)

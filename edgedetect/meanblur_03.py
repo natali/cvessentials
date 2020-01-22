@@ -3,7 +3,7 @@ import cv2
 
 KERNEL_SIZE = (5, 5)
 
-img = cv2.imread("assets/canal.png")
+img = cv2.imread("edgedetect/assets/canal.png")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 print(f'Gray: {gray[:5, :5]}')
 print(f'Shape of Original: {gray.shape}')

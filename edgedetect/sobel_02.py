@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-img_original = cv2.imread("assets/castello.png")
+img_original = cv2.imread("edgedetect/assets/castello.png")
 img_original = cv2.cvtColor(img_original, cv2.COLOR_BGR2RGB)
 img = cv2.cvtColor(img_original, cv2.COLOR_BGR2GRAY)
 img = cv2.medianBlur(img, 9)
